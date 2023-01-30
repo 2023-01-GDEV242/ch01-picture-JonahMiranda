@@ -67,7 +67,7 @@ public class Picture
             // sun.changeSize(80);
             // sun.makeVisible();
             lebron.makeVisible();
-            basketball.changeColor("red");
+            basketball.changeColor("orange");
             basketball.changeSize(30);
             basketball.makeVisible();
             
