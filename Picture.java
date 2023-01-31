@@ -34,6 +34,8 @@ public class Picture
     private Triangle net;
     private Square paint;
     private Square paint2;
+    private Circle key;
+    
 
 
     /**
@@ -63,6 +65,7 @@ public class Picture
         net = new Triangle();
         paint = new Square();
         paint2 = new Square();
+        key = new Circle();
         drawn = false;
     }
 
@@ -199,6 +202,13 @@ public class Picture
             paint2.changeSize(60);
             paint2.moveHorizontal(60);
             paint2.moveVertical(55);
+            
+            key.makeVisible();
+            key.changeColor("red");
+            key.changeSize(60);
+            key.moveHorizontal(110);
+            key.moveVertical(85);
+            
             drawn = true;
         }
     }
@@ -212,7 +222,24 @@ public class Picture
         // window.changeColor("white");
         // roof.changeColor("black");
         // sun.changeColor("black");
-        
+        sky.changeColor("black");
+        court.changeColor("black");
+        lebron.changeColor("white");
+        basketball.changeColor("white");
+        backboard.changeColor("white");
+        piece.changeColor("black");
+        pole1.changeColor("white");
+        pole2.changeColor("white");
+        pole3.changeColor("white");
+        pole4.changeColor("white");
+        pole5.changeColor("white");
+        pole6.changeColor("white");
+        pole7.changeColor("white");
+        net.changeColor("white");
+        paint.changeColor("white");
+        paint2.changeColor("white");
+        key.changeColor("white");
+
     }
 
     /**
