@@ -70,10 +70,6 @@ public class Picture
             // sun.changeSize(80);
             // sun.makeVisible();
             
-            basketball.changeColor("orange");
-            basketball.changeSize(30);
-            basketball.makeVisible();
-            
             sky.makeVisible();
             sky.changeColor("blue");
             sky.moveHorizontal(-330);
@@ -90,6 +86,11 @@ public class Picture
             lebron.moveHorizontal(-50);
             lebron.moveVertical(-20);
             
+            basketball.changeColor("orange");
+            basketball.changeSize(20);
+            basketball.makeVisible();
+            basketball.moveHorizontal(80);
+            basketball.moveVertical(-20);
             
             drawn = true;
         }
