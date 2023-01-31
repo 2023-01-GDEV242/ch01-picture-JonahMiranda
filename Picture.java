@@ -20,6 +20,7 @@ public class Picture
     private Circle basketball;
     private Circle circle3;
     private Square sky;
+    private Square court;
     
     
     
@@ -37,7 +38,7 @@ public class Picture
         lebron = new Person();
         basketball = new Circle();
         sky = new Square();
-        
+        court = new Square();
         drawn = false;
     }
 
@@ -68,7 +69,6 @@ public class Picture
             // sun.moveVertical(-40);
             // sun.changeSize(80);
             // sun.makeVisible();
-            lebron.makeVisible();
             
             basketball.changeColor("orange");
             basketball.changeSize(30);
@@ -80,7 +80,15 @@ public class Picture
             sky.moveVertical(-480);
             sky.changeSize(525);
             
+            court.makeVisible();
+            court.changeColor("greenish"); 
+            court.moveHorizontal(-330);
+            court.moveVertical(45);
+            court.changeSize(525);
             
+            lebron.makeVisible();
+            lebron.moveHorizontal(-50);
+            lebron.moveVertical(-20);
             
             
             drawn = true;
