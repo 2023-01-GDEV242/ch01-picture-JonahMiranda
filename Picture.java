@@ -24,9 +24,14 @@ public class Picture
     private Square backboard;
     private Square piece;
     private Square pole1; 
-    
-    
-    
+    private Square pole2; 
+    private Square pole3;
+    private Square pole4;
+    private Square pole5;
+    private Square pole6;
+    private Square pole7;
+    private Square pole8;
+    private Square pole9;
 
 
     /**
@@ -44,7 +49,16 @@ public class Picture
         court = new Square();
         backboard = new Square();
         piece = new Square();
-        pole1 = new Square(); 
+        pole1 = new Square();
+        pole2 = new Square();
+        pole3 = new Square();
+        pole4 = new Square();
+        pole5 = new Square();
+        pole6 = new Square();
+        pole7 = new Square();
+        pole8 = new Square();
+        pole9 = new Square();
+        
         drawn = false;
     }
 
@@ -116,6 +130,53 @@ public class Picture
             pole1.moveHorizontal(145);
             pole1.moveVertical(-5);
             
+            pole2.makeVisible(); 
+            pole2.changeColor("grey");
+            pole2.changeSize(15);
+            pole2.moveHorizontal(145);
+            pole2.moveVertical(10);
+            
+            pole3.makeVisible(); 
+            pole3.changeColor("grey");
+            pole3.changeSize(15);
+            pole3.moveHorizontal(145);
+            pole3.moveVertical(15);
+            
+            pole4.makeVisible(); 
+            pole4.changeColor("grey");
+            pole4.changeSize(15);
+            pole4.moveHorizontal(145);
+            pole4.moveVertical(25);
+            
+            pole5.makeVisible(); 
+            pole5.changeColor("grey");
+            pole5.changeSize(15);
+            pole5.moveHorizontal(145);
+            pole5.moveVertical(35);
+            
+            pole6.makeVisible(); 
+            pole6.changeColor("grey");
+            pole6.changeSize(15);
+            pole6.moveHorizontal(145);
+            pole6.moveVertical(45);
+            
+            pole7.makeVisible(); 
+            pole7.changeColor("grey");
+            pole7.changeSize(15);
+            pole7.moveHorizontal(145);
+            pole7.moveVertical(55);
+            
+            pole8.makeVisible(); 
+            pole8.changeColor("grey");
+            pole8.changeSize(15);
+            pole8.moveHorizontal(145);
+            pole8.moveVertical(65);
+            
+            pole9.makeVisible(); 
+            pole9.changeColor("grey");
+            pole9.changeSize(15);
+            pole9.moveHorizontal(145);
+            pole9.moveVertical(65);
             drawn = true;
         }
     }
