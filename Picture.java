@@ -21,6 +21,7 @@ public class Picture
     private Circle circle3;
     private Square sky;
     private Square court;
+    private Square backboard;
     
     
     
@@ -39,6 +40,7 @@ public class Picture
         basketball = new Circle();
         sky = new Square();
         court = new Square();
+        backboard = new Square();
         drawn = false;
     }
 
@@ -91,6 +93,12 @@ public class Picture
             basketball.makeVisible();
             basketball.moveHorizontal(80);
             basketball.moveVertical(-20);
+            
+            backboard.makeVisible(); 
+            backboard.changeColor("black");
+            backboard.changeSize(80);
+            backboard.moveHorizontal(100);
+            backboard.moveVertical(-85);
             
             drawn = true;
         }
