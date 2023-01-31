@@ -4,10 +4,9 @@
  * can be changed. You can set it to black-and-white display and back to
  * colors (only after it's been drawn, of course).
  *
- * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Jonah A. Miranda
+ * @version 2023.01.30
  */
 public class Picture
 {
@@ -32,6 +31,7 @@ public class Picture
     private Square pole7;
     private Square pole8;
     private Square pole9;
+    private Triangle net;
 
 
     /**
@@ -58,6 +58,7 @@ public class Picture
         pole7 = new Square();
         pole8 = new Square();
         pole9 = new Square();
+        net = new Triangle();
         
         drawn = false;
     }
@@ -177,6 +178,16 @@ public class Picture
             pole9.changeSize(15);
             pole9.moveHorizontal(145);
             pole9.moveVertical(65);
+            
+            net.makeVisible(); 
+            net.changeColor("white");
+            net.changeSize(35, 35);
+            net.moveHorizontal(240);
+            net.moveVertical(-40);
+            
+            
+            
+            
             drawn = true;
         }
     }
