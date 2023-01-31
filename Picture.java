@@ -22,6 +22,7 @@ public class Picture
     private Square sky;
     private Square court;
     private Square backboard;
+    private Square piece;
     
     
     
@@ -41,6 +42,7 @@ public class Picture
         sky = new Square();
         court = new Square();
         backboard = new Square();
+        piece = new Square();
         drawn = false;
     }
 
@@ -99,6 +101,12 @@ public class Picture
             backboard.changeSize(80);
             backboard.moveHorizontal(100);
             backboard.moveVertical(-85);
+            
+            piece.makeVisible();
+            piece.changeColor("red");
+            piece.changeSize(35);
+            piece.moveHorizontal(125);
+            piece.moveVertical(-40);
             
             drawn = true;
         }
