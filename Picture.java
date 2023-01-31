@@ -251,5 +251,23 @@ public class Picture
         // window.changeColor("black");
         // roof.changeColor("green");
         // sun.changeColor("yellow");
+        sky.changeColor("blue");
+        court.changeColor("greenish");
+        lebron.changeColor("black");
+        basketball.changeColor("orange");
+        backboard.changeColor("black");
+        piece.changeColor("red");
+        pole1.changeColor("grey");
+        pole2.changeColor("grey");
+        pole3.changeColor("grey");
+        pole4.changeColor("grey");
+        pole5.changeColor("grey");
+        pole6.changeColor("grey");
+        pole7.changeColor("grey");
+        net.changeColor("white");
+        paint.changeColor("red");
+        paint2.changeColor("red");
+        key.changeColor("red");
+        
     }
 }
