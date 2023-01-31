@@ -32,6 +32,8 @@ public class Picture
     private Square pole8;
     private Square pole9;
     private Triangle net;
+    private Square paint;
+    private Square paint2;
 
 
     /**
@@ -59,7 +61,8 @@ public class Picture
         pole8 = new Square();
         pole9 = new Square();
         net = new Triangle();
-        
+        paint = new Square();
+        paint2 = new Square();
         drawn = false;
     }
 
@@ -185,9 +188,17 @@ public class Picture
             net.moveHorizontal(240);
             net.moveVertical(-40);
             
+            paint.makeVisible();
+            paint.changeColor("red");
+            paint.changeSize(60);
+            paint.moveHorizontal(85);
+            paint.moveVertical(55);
             
-            
-            
+            paint2.makeVisible();
+            paint2.changeColor("red");
+            paint2.changeSize(60);
+            paint2.moveHorizontal(60);
+            paint2.moveVertical(55);
             drawn = true;
         }
     }
