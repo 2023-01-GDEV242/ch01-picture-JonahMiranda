@@ -23,6 +23,7 @@ public class Picture
     private Square court;
     private Square backboard;
     private Square piece;
+    private Square pole1; 
     
     
     
@@ -43,6 +44,7 @@ public class Picture
         court = new Square();
         backboard = new Square();
         piece = new Square();
+        pole1 = new Square(); 
         drawn = false;
     }
 
@@ -105,8 +107,14 @@ public class Picture
             piece.makeVisible();
             piece.changeColor("red");
             piece.changeSize(35);
-            piece.moveHorizontal(125);
+            piece.moveHorizontal(123);
             piece.moveVertical(-40);
+            
+            pole1.makeVisible(); 
+            pole1.changeColor("grey");
+            pole1.changeSize(15);
+            pole1.moveHorizontal(145);
+            pole1.moveVertical(-5);
             
             drawn = true;
         }
